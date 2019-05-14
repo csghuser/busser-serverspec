@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'busser'
   spec.add_dependency 'rake'
   spec.add_dependency 'rspec-core'
+  spec.add_dependency 'net-ssh', '<= 4.2.0'
 
   spec.add_development_dependency 'serverspec'
 
@@ -35,6 +36,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'coveralls'
 
+  
   if RUBY_VERSION < '2.0'
     spec.add_development_dependency 'net-ssh', '< 2.10'
     spec.add_development_dependency 'tins', '< 1.7'
